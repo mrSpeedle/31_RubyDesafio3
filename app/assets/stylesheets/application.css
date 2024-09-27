@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ :root {
+  --movies-bg: #f0f8ff;
+  --movies-navbar-bg: #88afd3;
+  --series-bg: #e6e6fa;
+  --series-navbar-bg: #cc9ecc;
+  --documentary-films-bg: #fffacd;
+  --documentary-films-navbar-bg: #ddaa5c;
+}
+
+/* Estilos para las secciones */
+.movies {
+  background-color: var(--movies-bg) !important;
+}
+
+.movies .table {
+  background-color: var(--movies-bg) !important;
+}
+
+.movies .table th,
+.movies .table td {
+  background-color: var(--movies-bg) !important;
+}
+
+.movies-navbar {
+  background-color: var(--movies-navbar-bg) !important;
+}
+
+.movies .btn-custom {
+  background-color: var(--movies-navbar-bg) !important;
+  color: #fff !important;
+}
+
+.series {
+  background-color: var(--series-bg) !important;
+}
+
+.series .table {
+  background-color: var(--series-bg) !important;
+}
+
+.series .table th,
+.series .table td {
+  background-color: var(--series-bg) !important;
+}
+
+.series-navbar {
+  background-color: var(--series-navbar-bg) !important;
+}
+
+.series .btn-custom {
+  background-color: var(--series-navbar-bg) !important;
+  color: #fff !important;
+}
+
+.documentary_films {
+  background-color: var(--documentary-films-bg) !important;
+}
+
+.documentary_films .table {
+  background-color: var(--documentary-films-bg) !important;
+}
+
+.documentary_films .table th,
+.documentary_films .table td {
+  background-color: var(--documentary-films-bg) !important;
+}
+
+.documentary_films-navbar {
+  background-color: var(--documentary-films-navbar-bg) !important;
+}
+
+.documentary_films .btn-custom {
+  background-color: var(--documentary-films-navbar-bg) !important;
+  color: #fff !important;
+}
+
+/* Estilos para los botones de paginación */
+.pagination {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.pagination .page-item .page-link {
+  color: #fff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 0.25rem !important;
+  padding: 0.5rem 0.75rem !important;
+}
+
+.movies .pagination .page-item .page-link {
+  background-color: var(--movies-navbar-bg) !important;
+}
+
+.series .pagination .page-item .page-link {
+  background-color: var(--series-navbar-bg) !important;
+}
+
+.documentary_films .pagination .page-item .page-link {
+  background-color: var(--documentary-films-navbar-bg) !important;
+}
+
+/* Estilos adicionales para los elementos de paginación de Kaminari */
+.pagination .page,
+.pagination .first,
+.pagination .prev,
+.pagination .next,
+.pagination .last {
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
+.pagination .page a,
+.pagination .first a,
+.pagination .prev a,
+.pagination .next a,
+.pagination .last a {
+  background-color: inherit !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 0.25rem !important;
+  padding: 0.5rem 0.75rem !important;
+  text-decoration: none;
+}
+
+.pagination .page.current,
+.pagination .first.current,
+.pagination .prev.current,
+.pagination .next.current,
+.pagination .last.current {
+  background-color: inherit !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 0.25rem !important;
+  padding: 0.5rem 0.75rem !important;
+}

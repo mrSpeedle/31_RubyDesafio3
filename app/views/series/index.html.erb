@@ -1,0 +1,29 @@
+<div class="series">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1>Series</h1>
+    <%= link_to 'New Serie', '/series/new', class: 'btn btn-custom' %>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Synopsis</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @series.each do |serie| %>
+        <tr>
+          <td><%= serie.id %></td>
+          <td><%= serie.name %></td>
+          <td><%= serie.synopsis %></td>
+          <td><%= serie.director %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <%= paginate @series %>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="documentary_films">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1>Documentary Films</h1>
+    <%= link_to 'New Documentary Film', '/documentary_films/new', class: 'btn btn-custom' %>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Synopsis</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @documentary_films.each do |documentary_film| %>
+        <tr>
+          <td><%= documentary_film.id %></td>
+          <td><%= documentary_film.name %></td>
+          <td><%= documentary_film.synopsis %></td>
+          <td><%= documentary_film.director %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <%= paginate @documentary_films %>
+  </div>
+</div>

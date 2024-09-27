@@ -1,0 +1,21 @@
+development:
+  <<: *default
+  database: desafio3_dev
+  username: postgres
+  password: añade una contra(admin123?)
+  host: 127.0.0.1
+  port: 5432
+
+test:
+  <<: *default
+  database: desafio3_test
+  username: postgres
+  password: añade una contra(admin123?)
+  host: 127.0.0.1
+
+
+production:
+  <<: *default
+  database: desafio3_production
+  username: postgres
+  password: <%= ENV["DESAFIO3_DATABASE_PASSWORD"] %>
